@@ -3,7 +3,16 @@ public class NuclearPlant {
 
         for (int i = 0; i <p; i++) {
 
+            try{
+                Thread.sleep(1000);
+            }catch (Exception e){
+                System.out.println(e);
+            }
+
             System.out.println(" ");
+            for (int j = p; j >i-1 ; j--) {
+                System.out.print(" ");
+            }
 
             for (int j = 1; j <=Math.pow(2,i-1); j++) {
                 if (p!=0){
@@ -11,12 +20,24 @@ public class NuclearPlant {
                 }
                 p=p-1;
             }
+
+
             System.out.println();
+            for (int j = p; j >i ; j--) {
+                System.out.print(" ");
+            }
             for (int j = 1; j <=Math.pow(2,i) ; j++) {
                 System.out.print(" n ");
             }
+
+
         }
         for (int i = 0; i <Math.pow(2,p*0) ; i++) {
+            try{
+                Thread.sleep(1000);
+            }catch (Exception e){
+                System.out.println(e);
+            }
             System.out.println(" ");
             for (int j = 1; j <=p; j++) {
 
