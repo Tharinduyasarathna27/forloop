@@ -7,10 +7,12 @@ public class Application {
         Scanner scanner =new Scanner(System.in);
         NuclearPlant nuclearPlant =new NuclearPlant();
         PyramidPrinter pyramidPrinter = new PyramidPrinter();
+        NumberPattern numberPattern =new NumberPattern();
         System.out.println("please enter  value : ");
         int value = scanner.nextInt();
-        //nuclearPlant.reactor(value);
+        nuclearPlant.reactor(value);
         pyramidPrinter.pyramidGenerator(value);
+        numberPattern.numberGenerator(value);
     }
 
 }
